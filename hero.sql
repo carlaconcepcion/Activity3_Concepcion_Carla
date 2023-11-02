@@ -163,3 +163,11 @@ FROM Player p
 JOIN Hero h ON p.hero_id = h.hero_id
 WHERE p.player_experience > 0;
 
+-- Provide a list of heroes classified as archers.
+SELECT hero_id, hero_name
+FROM Hero
+WHERE class_id IN (
+    SELECT class_id
+    FROM Class
+    WHERE class_description LIKE '%Archer%'
+);

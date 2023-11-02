@@ -103,7 +103,7 @@ VALUES
 -- Insert data into the Hero table
 INSERT INTO Hero (hero_id, hero_name, class_id, is_active)
 VALUES
-    (1, 'Aldous', 101, true),
+    (1, 'Aldous', 101, false),
     (2, 'Karina', 102, true),
     (3, 'Gusion', 103, false),
     (4, 'Layla', 101, true),
@@ -145,7 +145,7 @@ VALUES
 -- Insert data into the HeroItem table
 INSERT INTO HeroItem (hero_item_id, hero_id, item_id)
 VALUES
-    (1, 1, 101),  -- Aldous has Blade of Despair
+    --(1, 1, 101),  -- Aldous has Blade of Despair --Deleted
     (2, 2, 102),  -- Karina has Magic Shoes
     (3, 3, 103),  -- Gusion has Bloodlust Axe
     (4, 4, 104),  -- Layla has Demon Hunter Sword
